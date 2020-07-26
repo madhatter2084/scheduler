@@ -38,3 +38,23 @@ $("#textarea4P").append(localStorage.getItem("4P"));
 $("#textarea5P").append(localStorage.getItem("5P"));
 });
 
+var currentTime = parseInt(moment().format("HH"));
+$("textarea").each(function(){
+    var timeBlock = parseInt($(this).attr("name"));
+    
+    if (timeBlock < currentTime){
+        $(this).addClass("past");
+        $(this).removeClass("present");
+        $(this).removeClass("future");
+    }
+    if (timeBlock > currentTime){
+        $(this).addClass("future");
+        $(this).removeClass("past");
+        $(this).removeClass("present");
+    }
+    if (timeBlock === currentTime){
+        $(this).addClass("present");
+        $(this).removeClass("past");
+        $(this).removeClass("future");
+    }
+})

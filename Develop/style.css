@@ -40,7 +40,7 @@ textarea{
 .row {
   white-space: pre-wrap;
   height: 80px;
-  /* border-top: 1px solid white; */
+  border-top: 1px solid white;
 }
 
 .hour {
@@ -57,7 +57,7 @@ textarea{
 }
 
 .present {
-  background-color: #ff6961;
+  background-color: red;
   color: white;
 }
 
