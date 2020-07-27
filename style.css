@@ -3,7 +3,7 @@ body {
   font-size: 16px;
   line-height: 1;
   background: rgb(246,239,242);
-background: radial-gradient(circle, rgba(246,239,242,1) 0%, rgba(39,125,227,1) 100%);
+  background: radial-gradient(circle, rgba(246,239,242,1) 0%, rgba(39,125,227,1) 100%);
 }
 
 header{
@@ -11,6 +11,16 @@ header{
   height: 300px;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.display-3{
+  color: rgb(228, 247, 56);
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+p{
+  color: rgb(28, 13, 236);
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
 textarea{
@@ -51,22 +61,23 @@ textarea{
   align-items: center;
   justify-content: center;
   font-size: 30px;
-  color: black;
+  color: rgb(228, 247, 56);
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
 .past {
-  background-color: black;
+  background-color: rgb(94, 92, 12);
   color: gray;
 }
 
 .present {
-  background-color: rgb(147, 229, 147);
+  background-color: yellow;
   color: rgb(8, 0, 0);
 }
 
 .future {
   background-color: green;
-  color: black;
+  color: rgb(212, 235, 13);
 }
 
 .saveBtn {
@@ -85,4 +96,22 @@ textarea{
 
 svg{
   margin: 0 auto;
+  color: rgb(228, 247, 56);
+}
+
+.btnTop{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+}
+
+a{
+  color: rgb(228, 247, 56);
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+a:hover{
+  pointer-events: none;
+  opacity: 0.2;
 }
