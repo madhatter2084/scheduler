@@ -12,6 +12,11 @@ header{
   background-repeat: no-repeat;
   background-size: cover;
 }
+.title{
+  position: relative;
+  top: -30px;
+  left: 0px;
+}
 
 .display-3{
   color: rgb(228, 247, 56);
@@ -115,9 +120,3 @@ a:hover{
   pointer-events: none;
   opacity: 0.2;
 }
-
-/* @media only screen and (max-width: 600px) {
-  .row{
-
-  }
-} */
